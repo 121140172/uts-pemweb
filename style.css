@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #be8d62;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #be8d62;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #be8d62;
+    padding-left: 10px;
+}
+
+.container {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.container img {
+    opacity: 10; 
+    width: 100%;
+}
+
+.header-logo {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    width: 100px; 
+    height: auto; 
+}
+
+.container p {
+    font-size: 14px;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-y: auto;
+    height: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #be8d62;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.sticky-header th {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: rgb(208, 162, 129);
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #7c6868;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative; 
+        height: auto; 
+    }
+
+    .container {
+        margin-left: 0; 
+        padding: 10px; 
+    }
+
+    header, footer {
+        padding: 10px 5px; 
+    }
+
+    table {
+        font-size: 14px; 
+    }
+
+    form input, form button {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 12px; 
+    }
+
+    .sidebar a {
+        font-size: 12px; 
+    }
+
+    table, th, td {
+        font-size: 12px; 
+    }
+}

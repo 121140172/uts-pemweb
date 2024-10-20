@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+        function showAlert() {
+            alert('Pendaftaran berhasil');
+            document.getElementById('form-pendaftaran').reset();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BUBAH ALFIAN MAKEUP ARTIS</h1>
+        <img src="logo.png" alt="Logo" class="header-logo">
+    </header>
+
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="formulir.html">Formulir</a>
+        <a href="table.html">Tabel</a>
+    </div>
+
+    <div class="container">
+        <h2>Pendaftaran Personal Makeup Course</h2>
+        <form action="table.html" method="get" onsubmit="showAlert(); return false;">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="telpon">Telpon:</label>
+            <input type="text" id="Telpon" name="telpon" required>
+
+            <label for="jenis kelamin">Jenis kelamin:</label>
+            <input type="text" id="jenis kelamin" name="Jenis kelamin" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tanggal">Tanggal Acara:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        Diana Tiara Putri - 121140172 UTS Pemweb RB
+    </footer>
+</body>
+</html>
